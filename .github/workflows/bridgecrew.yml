@@ -1,4 +1,4 @@
-name: Bridgecrew
+name: Bridgecrew IaC scan
 on:
   pull_request:
   push:
@@ -19,3 +19,5 @@ jobs:
       with:
         api-key: ${{ secrets.BC_API_KEY }}
         directory: terraform/
+        output_format: cli
+        soft_fail: false
