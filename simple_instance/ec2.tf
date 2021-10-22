@@ -68,9 +68,9 @@ resource "aws_s3_bucket" "data" {
   acl           = "public-read"
   force_destroy = true
   tags = {
-    git_commit           = "78770b4d55d404031a9f0bc1d2299f6734012975"
+    git_commit           = "9a61c13c5935e252e4a2d1278c0a7313741af507"
     git_file             = "simple_instance/ec2.tf"
-    git_last_modified_at = "2021-10-22 11:23:07"
+    git_last_modified_at = "2021-10-22 11:25:05"
     git_last_modified_by = "fefefe@gmail.com"
     git_modifiers        = "fefefe"
     git_org              = "fefefe8888"
