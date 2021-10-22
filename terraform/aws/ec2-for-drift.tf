@@ -1,5 +1,5 @@
 provider "aws" {
-  alias = "drift"
+  alias  = "drift"
   region = "us-east-1"
 }
 
