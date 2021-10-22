@@ -7,7 +7,7 @@ resource "aws_security_group" "ssh_traffic" {
   name        = "ssh_traffic"
   description = "Allow SSH inbound traffic"
   ingress {
-    self = false
+    self        = false
     description = "SSH"
     from_port   = 22
     to_port     = 22
