@@ -58,23 +58,3 @@ data "aws_ami" "ubuntu" {
 
   owners = ["099720109477"] # Canonical
 }
-
-resource "aws_s3_bucket" "data" {
-  # bucket is public
-  # bucket is not encrypted
-  # bucket does not have access logs
-  # bucket does not have versioning
-  bucket        = "open-data"
-  acl           = "public-read"
-  force_destroy = true
-  tags = {
-    git_commit           = "9a61c13c5935e252e4a2d1278c0a7313741af507"
-    git_file             = "simple_instance/ec2.tf"
-    git_last_modified_at = "2021-10-22 11:25:05"
-    git_last_modified_by = "fefefe@gmail.com"
-    git_modifiers        = "fefefe"
-    git_org              = "fefefe8888"
-    git_repo             = "terragoat"
-    yor_trace            = "1c68e549-c063-4a14-bf4d-4da457cb34fe"
-  }
-}
