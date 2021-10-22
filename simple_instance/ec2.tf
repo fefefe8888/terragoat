@@ -13,6 +13,16 @@ resource "aws_security_group" "ssh_traffic" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags = {
+    git_commit           = "001a8238cf1d5e370c929d2f97aa010c081cdc34"
+    git_file             = "simple_instance/ec2.tf"
+    git_last_modified_at = "2021-10-22 05:31:06"
+    git_last_modified_by = "fefefe@gmail.com"
+    git_modifiers        = "fefefe"
+    git_org              = "fefefe8888"
+    git_repo             = "terragoat"
+    yor_trace            = "234617b4-885e-416d-a31d-7d61236ca1c6"
+  }
 }
 
 resource "aws_instance" "web_server_instance" {
@@ -21,6 +31,16 @@ resource "aws_instance" "web_server_instance" {
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
 
 
+  tags = {
+    git_commit           = "001a8238cf1d5e370c929d2f97aa010c081cdc34"
+    git_file             = "simple_instance/ec2.tf"
+    git_last_modified_at = "2021-10-22 05:31:06"
+    git_last_modified_by = "fefefe@gmail.com"
+    git_modifiers        = "fefefe"
+    git_org              = "fefefe8888"
+    git_repo             = "terragoat"
+    yor_trace            = "e302ba60-b6ee-4ece-ac78-ca0fcf7534d7"
+  }
 }
 
 data "aws_ami" "ubuntu" {
